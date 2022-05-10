@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:paddingTop="16dp"
+	android:paddingLeft="16dp"
+	android:paddingRight="16dp"
+	android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+	<RelativeLayout
+		android:layout_height="50dp"
+		android:layout_weight="0.5"
+		android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="250dp"
+            android:id="@+id/itemImg"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/basmati_longrice"
+            android:layout_marginLeft="0.0dp" 
+			/>
+		<TextView
+			android:id="@id/item_title"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:text="Basmati Rice"
+			android:textStyle="bold"
+			android:textSize="18sp"
+			android:layout_toRightOf="@id/itemImg"
+		/>
+
+		<TextView
+			android:id="@id/category"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Category"
+			android:layout_below="@id/item_title"
+			android:layout_toRightOf="@id/itemImg"
+		/>
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:text="Price"
+			android:layout_below="@id/category"
+			android:layout_toRightOf="@id/itemImg"
+			android:id="@id/itemPrice"
+			/>
+
+		</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="0sp"
+		android:layout_width="match_parent"
+		android:layout_weight="0.5">
+
+		<TextView
+			android:id="@+id/status"
+			android:text="Status:"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="6dp"
+		/>
+
+			<TextView
+			android:id="@+id/statusText"
+			android:text="Graduated"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="6dp"
+			android:layout_toRightOf="@+id/status"
+			android:layout_marginLeft="4dp"
+			android:textStyle="bold"
+		/>
+
+		<ImageView
+		android:id="@+id/deleteButton"
+			android:layout_height="30dp"
+			android:layout_width="30dp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:src="@drawable/cross_ico"
+			android:padding="4dp"
+			android:layout_marginBottom="6dp"
+
+		/>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#e2e2e2"
+			android:layout_alignParentBottom="true"
+		/>
+
+		</RelativeLayout>
+</LinearLayout>
